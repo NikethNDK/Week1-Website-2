@@ -1,0 +1,89 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* navbar section  */
+.navbar{
+    height: 41px;
+    display: flex;
+    margin: 7px 90px;
+}
+
+.searchbar{
+    background-color: #EDF3f8;
+    padding: 5px;
+    display: flex;
+    column-gap: 5px;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-right: 5rem;
+}
+
+.searchbar input{
+    width: 15rem;
+    border: none;
+    background-color: #EDF3f8;
+}
+/* icons in the navbar */
+.nav-icons{
+    display: flex;
+    flex: 1;
+    gap: 35px;
+    
+}
+.icon-position{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center; 
+}
+.icon-position a{
+    text-decoration: none;
+    text-align: center;
+}
+
+.icon-position img{
+    height: 1.5rem;
+}
+.icon-position p{
+    font-size: .8rem;
+    color: darkgrey;
+}
+
+.icon-position a:hover p{
+    color: black !important;
+}
+.icon-position a:hover img{
+    filter: brightness(0.2) saturate(1.5);
+}
+
+.icon-position a:hover img.no-hover{
+    filter: none;
+}
+
+/* for placing the dropdown arrow near to me  */
+/* Flexbox to align p and svg in the same line */
+.text-icon-wrapper {
+    display: flex;
+    align-items: center; 
+    column-gap: 6px; 
+}
+
+.text-icon-wrapper p {
+    margin: 0; 
+}
+
+.text-icon-wrapper img {
+    width: 16px;
+    height: 16px; 
+}
