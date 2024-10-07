@@ -12,15 +12,4 @@ To avoid the hover effect on the images the filter effect is removed with anothe
 
 Body part
 The main body container is divided in to three grid columns left main and right.
-
-Left sidebar
-it is further divided into 4 smaller cards. 
-    The first card is the profile card.
-    The second one left-card2,left-card3 and left-card4. left-card2 is kept as the base and the height of the rest is adjusted based on the requirement.
-    Class used to keep the work details is reused for aligning the items in the 2 class also.
-    Hover effect is applied to make the underline and color change
-
-
-
-
 >>>>>>> a48213c859d9f89e23f49628119b073f9e1185fe

@@ -3,6 +3,10 @@
 *::after{
     box-sizing: border-box;
 }
+a{
+    text-decoration: none;
+    color: black;
+}
 
 *{
     margin: 0;
@@ -28,6 +32,7 @@ body{
     margin: 0px 0px;
     top: 0px;
     width: 100%;
+    z-index: 10;
 }
 
 .searchbar{
@@ -111,7 +116,7 @@ body{
 .grid-containers{
     display: grid;
     grid-template-areas: "left main right";
-    grid-template-columns: 1.5fr 3fr  1.5fr;
+    grid-template-columns: 1fr 3fr  1fr;
     gap: 20px;
     height: 100vh;
     margin: 2rem 10rem 0rem 10rem;
@@ -119,7 +124,7 @@ body{
 
 .left-sidebar{
     grid-area:left;
-    background-color: #b78989;
+    /* background-color: #b78989; */
     border-radius: 8px;
 }
 
@@ -135,11 +140,109 @@ body{
     border-radius: 8px;
 }
 
+/* leftbar contents */
+/* 1. profilecard  */
+.profile-card{
+    height: 16rem;
+    background-color: white;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border: 1px solid lightgray;
+    position: relative;
+}
+
 .background{
     background-size: cover;
-    width: 100%;
-    /* height: 70px; */
+    /* width: 100%; */
+    height: 4.3rem;
     background-repeat: no-repeat;
     display: block;
     border-radius: 8px 8px 0 0;
+}
+
+.user-image{
+    width: 72px;
+    border-radius: 50%;
+    position: absolute;
+    top: 2.15rem;
+    left: 1.15rem;
+    border: 2px solid white;
+}
+
+.profile-details{
+    
+    margin-left: 1.15rem;
+}
+.profile-details-position{
+    margin-top: 40px;
+}
+.profile-details h3{
+    font-size: 1.3rem;
+    font-weight:bold;
+    
+}
+.profile-details p{
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
+.work-detail {
+    display: flex; 
+    align-items: center;                       
+    gap: 7px;  
+                   
+}
+.work-detail-position{
+    margin: 10px 15px 10px 0px;  
+}
+.work-detail img {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+.work-detail span{
+    font-weight: bold;
+    font-size:12px;
+    line-height: 16px;
+    color: rgb(71, 71, 71);
+}
+
+.left-card2{
+    margin-top: 10px;
+    width: 100%;
+    height: 3.5rem;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+}
+
+.rejoin:hover{
+    color: rgb(92, 92, 211);
+}
+
+.left-card3{
+    height: 3.8rem;
+}
+
+.left-card3 p{
+    margin-top: 10px;
+    margin-left: 1.15rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.left-card3 p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.left-card4{
+    height: 6.3rem;
+}
+.left-card4>div{
+    margin-top: .5rem;
+    margin-left: 1.15rem;
+    padding: 3px;
+}
+.left-card4>div>span:hover{
+    text-decoration: underline;
+    cursor: pointer;
 }
