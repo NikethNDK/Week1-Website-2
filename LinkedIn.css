@@ -111,15 +111,17 @@ body{
     background-color: rgba(240, 234, 234, 0.752);
     flex: 1;
     margin-top: 61px;
+    overflow: auto;
 }
 
 .grid-containers{
     display: grid;
     grid-template-areas: "left main right";
-    grid-template-columns: 1fr 3fr  1fr;
+    grid-template-columns: 1fr 2fr  1fr;
     gap: 20px;
     height: 100vh;
     margin: 2rem 10rem 0rem 10rem;
+
 }
 
 .left-sidebar{
@@ -148,12 +150,13 @@ body{
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     border: 1px solid lightgray;
-    position: relative;
+    position: relative;    
+      
 }
 
 .background{
     background-size: cover;
-    /* width: 100%; */
+    width: 100%;
     height: 4.3rem;
     background-repeat: no-repeat;
     display: block;
@@ -245,4 +248,301 @@ body{
 .left-card4>div>span:hover{
     text-decoration: underline;
     cursor: pointer;
+}
+/* end of the left sidebar section  */
+
+/* main content  */
+/* write a post section  */
+.write-post{
+    height: 7.25rem;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+    padding: 8px;
+}
+.write-post img{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.main-actions{
+    display: flex;
+    column-gap: 3.5rem;
+    padding: 5px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    /* margin-bottom: 2.2rem; */
+    
+}
+.main-actions>.work-detail{
+    padding: 0.2rem;
+}
+.main-actions .work-detail img{
+    width: 2rem;
+}
+
+.write-post>.work-detail>span input{
+    width: 27rem;
+    padding: 14px;
+    border-radius: 22px;
+    border: 1px solid lightgrey;
+}
+
+.write-post>.work-detail>span input::placeholder {
+    font-weight: 600;
+    color: grey;
+}
+
+.write-post>.work-detail>span input:hover{
+    background-color: rgba(235, 233, 233, 0.627);
+}
+.main-actions>.work-detail a:hover{
+    background-color: rgba(238, 236, 236, 0.667);
+}
+/* end of section for write a post  */
+/* line section */
+.line-with-text a{
+    margin: 2px auto;
+    display: flex; 
+    align-items: center; 
+    gap: 7px; 
+}
+
+.line {
+    flex: 1; 
+    border: none;
+    border-top: 1px solid #b1afaf;
+}
+
+.text {
+    font-weight: normal; 
+    margin: 0; 
+    font-size: 0.8rem;
+    color: #b1afaf;
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+    margin-left: 0px;
+}
+/* end of line section */
+.post-card{
+    background-color: white;
+    border-radius: 8px;
+    padding: 5px;
+}
+/* posted by user details */
+.post-user-details{
+    margin-top: 6px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.post-user-details h6{
+    font-size: 14px;
+    color: rgb(44, 44, 44);
+}
+
+.post-user-details>img{
+    width: 48px;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+.post-user-details>span p{
+    margin-top: 4px;
+    font-size: 12px;
+    color: rgba(57, 55, 55, 0.833);
+}
+
+.content-description p{
+    font-size: 14px;
+    font-weight: normal;
+    padding: 12px;
+}
+
+.reactions{
+    margin-top: 4px;
+    margin-left: 12px;
+    position: relative;
+    display: flex;
+    
+}
+
+.reactions .img2{
+    position: absolute;
+    left: 10px;  
+}
+.reactions .img3{
+    position: absolute;
+    left: 18px;  
+}
+.reactions span{
+    margin-left: 24px;
+    font-size: 14px;
+    color: rgb(71, 70, 70);
+}
+
+.reactions>.comments{
+    position: absolute;
+    right: 20px;
+}
+.line1{
+    width: 95%; /* Adjust the width to your preference */
+    border: none; /* Remove default border styling */
+    border-top: 1px solid #6f6e6e; /* Add your own custom line style */
+    margin: 10px auto;
+}
+
+.reaction-button{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.reaction-button>div{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 7px;
+    flex: 1;
+    justify-content: center;
+}
+.reaction-button>div:hover{
+    background-color: #b1afaf;
+    border-radius: 3px;
+}
+
+.reaction-button img{
+    width: 26px;
+}
+
+/* popup reactions inside the like reaction button  */
+.reaction-button .hover-icons{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    top: -150%; 
+    left: -4%;
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 1;
+    padding: 9px;
+    border-radius: 6px;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+    display: none;
+
+}
+.reaction-button:hover .hover-icons {
+    display:flex;
+   
+}
+
+@keyframes wave {
+    0% { transform: scale(1) rotate(0deg); }
+    25% { transform: scale(1.1) rotate(5deg); }
+    50% { transform: scale(1.1) rotate(-5deg); }
+    75% { transform: scale(1.1) rotate(3deg); }
+    100% { transform: scale(1.1) rotate(0deg); }
+}
+
+.hover-icons .pop-up-container{
+    animation: wave 0.5s ease-out forwards
+
+}
+.pop-up-container:hover .pop-up {
+    transform: scale(1.1);
+}
+/* end of main content part  */
+/* right sidebar */
+.news-module{
+    background-color: white;
+    border-radius: 8px;
+    padding-bottom: 14px;
+}
+.right-section1{
+    display: flex;
+    justify-content: space-between;
+    padding: 9px;
+}
+.right-section1 h2{
+    font-size: 1.2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight:500;
+}
+.right-section1 img{
+    width: 14px;
+}
+
+.subheadings{
+    padding: 5px 5px 10px 10px
+} 
+
+.subheader h3{
+    color: #6f6e6e;
+    font-size: 1rem;
+   padding-left: 10px;
+}
+.subheader h6{
+    font-size: 0.9rem;
+    margin-top: 8px;
+    color: #383636;
+}
+
+.subheader .work-detail{
+    margin-top: 4px;
+    color: #7a7a7a;
+    font-size: 12px;
+}
+
+.subheader>.subheadings:hover{
+    background-color: #cecdcd88;
+}
+/* .show-button{
+    display: flex;
+} */
+.show-button{
+    margin-left: 3px;
+}
+.show-button button{
+    border: none;
+    background-color: white;
+    padding: 7px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    color: #4f4d4d;
+    font-weight: bold;
+    margin-bottom: 3px;
+    
+}
+.show-button>button>img{
+    width: 12px;
+}
+
+.show-button button:hover{
+    background-color: #cecdcd88;
+    border-radius: 6px;
+}
+.puzzles div{
+    margin-top: 5px;
+}
+.puzzles a{  
+    
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.puzzles p{
+    color: #4f4d4d;
+    font-size: 0.75rem;
+}
+
+.puzzles>div:hover{
+    background-color: #cecdcd88;
+  
 }
