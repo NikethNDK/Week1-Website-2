@@ -20,6 +20,42 @@ it is further divided into 4 smaller cards.
     Class used to keep the work details is reused for aligning the items in the 2 class also.
     Hover effect is applied to make the underline and color change
 
+Main content
+    Main content is mainly divided into two parts one for drafting the post and other as the item to be posted by the user
+
+    write a post -- class
+        it contains the first section in the main content - ie the profile image, input and the actions available to post. 
+        Work details class which is defined for the left section is used for aligning media, contribute expertise and write article
+    
+    horizontail line decorator used line-with-text
+        This sets a border to 0 and then sets border top pixels. It also uses the flexgrow property to fill up the rest of the area.
+    
+    post-card
+        The entire details of the post is kept inside this card. The main classes under this section are:
+            a. post-user-details
+                it contains the user image and the user details
+            b. content-description
+                it contains the brief about the content and the post(i.e image)
+            c. reactions
+                it contains which all reactions the users has given for the post and the number of comments in the left side
+            d. line1
+                a decorator used to separate the elements
+            e. reaction-button
+                reactions such as like celebration and so on place equaly.Also animation is applied explicilty to the like class for hover effect and popup of available reaction emojis.
+
+Right sidebar
+    The entire section is divided in to two parts
+    1. news-module
+        a. right section-it contains the linkedin logo and the ;i; button
+        b. subheadings-all the rest of the section are repicated using the same class.  Inorder to keep the footer earlier class 'work-detail' is reused
+        c. show more is wrapped inside a button tag along with the frop down arrow svg
+        d. puzzles- all puzzles are wrapped into diffetent containers and given a hover effect
+    
+    
+
+
+    
+        
 
 
 
