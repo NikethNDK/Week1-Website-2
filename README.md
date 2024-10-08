@@ -43,6 +43,8 @@ Main content
             e. reaction-button
                 reactions such as like celebration and so on place equaly.Also animation is applied explicilty to the like class for hover effect and popup of available reaction emojis.
 
+    Note: Copy of the same card is made to populate the content.
+
 Right sidebar
     The entire section is divided in to two parts
     1. news-module
@@ -51,7 +53,25 @@ Right sidebar
         c. show more is wrapped inside a button tag along with the frop down arrow svg
         d. puzzles- all puzzles are wrapped into diffetent containers and given a hover effect
     
+    2.premium-ad-card
+        a. reuses the class 'work-detail' to place the first element and modified the same class with flex property justify content:end 
+        b. img-logo - this class is used to align the images
+        c.tagline class is to align the text
+        d. A button tag is used to create it
+        e. position is kept fixed when this card reaches by using css sticky property
     
+    3. try-linkedin-card- it is the container to hold the items. The items are addded as span and p tag. CSS is applied by modifying the work-detail class to this child and adding custom css to the elements.
+    position is kept fixed when this card reaches by using css sticky property
+
+
+    4. linkedin details
+    the actions are added using a tag.then the container is kept sticky
+
+    5. linkedin footer
+    logo and text is placed side by side using span and it is fixed at a position using sticky
+
+
+
 
 
     

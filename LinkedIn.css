@@ -132,13 +132,13 @@ body{
 
 .main-content{
     grid-area:main;
-    background-color: lightblue;
+    /* background-color: lightblue; */
     border-radius: 8px;
 }
 
 .right-sidebar{
     grid-area: right;
-    background-color:lightcoral;
+    /* background-color:lightcoral; */
     border-radius: 8px;
 }
 
@@ -332,6 +332,7 @@ body{
     background-color: white;
     border-radius: 8px;
     padding: 5px;
+    margin-bottom: 10px;
 }
 /* posted by user details */
 .post-user-details{
@@ -545,4 +546,132 @@ body{
 .puzzles>div:hover{
     background-color: #cecdcd88;
   
+}
+
+.premium-ad-card{
+    margin-top: 8px;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+    padding: 9px;
+}
+.sticky-adcard{
+    position: sticky;
+    top: 35px;
+}
+
+.premium-ad-card .work-detail{
+    justify-content: flex-end;
+    margin-right: 8px;  
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.premium-ad-card .text{
+    margin:8px 2px 8px 15px;
+    color: #5a5454da;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.img-logo{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.user-img{
+    border-radius: 50%;
+    width: 78px;
+}
+
+.linkedin-logo{
+    width: 78px;
+}
+.tagline{
+    text-align: center;
+    margin-top: 15px;
+    color: #4f4d4d;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    margin: 8px 5px;
+}
+.try-for-free{
+    background-color: white;
+    color: #0073b1;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px 18px;
+    border: 1px solid  #0073b1;
+    border-radius: 18px;
+}
+
+.try-linkedin-card{
+    display: flex;
+    background-color: white;
+    padding: 2px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid lightgray;
+}
+.sticky-trycard{
+    position: sticky;
+    top: 300px;
+}
+
+.try-linkedin-card>.work-detail{
+    padding: 7px;
+    
+}
+
+
+.try-linkedin-card>.work-detail>span{
+    background-color:rgba(250, 167, 167, 0.655) ;
+    font-size: 12px;
+    padding: 4px;
+    font-weight: 300;
+    border-radius: 4px;
+}
+.try-linkedin-card>.work-detail>p{
+    font-size: 15px;
+    font-weight: 500;
+    /* font-weight: bold; */
+    color: #6f6e6e;
+}
+.linkedin-details{
+    padding: 10px;
+    margin: .4rem .8rem;
+}
+.sticky-linkedin-detail{
+    position: sticky;
+    top: 350px;
+}
+
+.linkedin-actions{
+    /* display: inline-flex; */
+    font-size: 12px;
+    gap: 14px;
+    
+}
+
+.linkedin-actions a{
+    color: #6f6e6e;
+}
+
+.linkedin-actions span:hover{
+    color: #0073b1;
+    text-decoration: underline;
+    
+}
+
+.linkedinfooter{
+    margin-left: 2rem;
+}
+
+.sticky-linkedinfooter{
+    position: sticky;
+    top: 440px;
+}
+.linkedinfooter span{
+    font-size: 12px;
 }
