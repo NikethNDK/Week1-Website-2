@@ -145,7 +145,7 @@ body{
 /* leftbar contents */
 /* 1. profilecard  */
 .profile-card{
-    height: 16rem;
+    height: fit-content;
     background-color: white;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
@@ -173,7 +173,6 @@ body{
 }
 
 .profile-details{
-    
     margin-left: 1.15rem;
 }
 .profile-details-position{
@@ -210,9 +209,10 @@ body{
 }
 
 .left-card2{
+    padding: 8px;
     margin-top: 10px;
     width: 100%;
-    height: 3.5rem;
+    height: fit-content;
     background-color: white;
     border-radius: 8px;
     border: 1px solid lightgray;
@@ -639,24 +639,42 @@ body{
     color: #6f6e6e;
 }
 .linkedin-details{
-    padding: 10px;
-    margin: .4rem .8rem;
+    margin: .6rem .8rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* gap: 6px; */
+    align-items: center;
+    /* padding: 16px; */
+
 }
+
+.linkedin-details>a>span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+}
+
 .sticky-linkedin-detail{
     position: sticky;
     top: 350px;
 }
 
 .linkedin-actions{
-    /* display: inline-flex; */
+    display: flex;
+    align-items: center;
     font-size: 12px;
-    gap: 14px;
+    width: fit-content;
+    text-wrap: nowrap;
+    
     
 }
 
-.linkedin-actions a{
+.linkedin-actions{
     color: #6f6e6e;
 }
+
 
 .linkedin-actions span:hover{
     color: #0073b1;
@@ -666,6 +684,7 @@ body{
 
 .linkedinfooter{
     margin-left: 2rem;
+    margin-top: 10px;
 }
 
 .sticky-linkedinfooter{
